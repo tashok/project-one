@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Demo</title> 
+	<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+	<script type="text/javascript" src="../script/jquery-1.4.2.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	$(".tab_menu ul li").click(function(){
+			$(this).addClass('active');
+			$(this).siblings("li").removeClass('active') }
+		);
+	});
+	</script>
+</head>
+<body>
+<!--page wraper Starts Here-->
+<div class="pagewrap">
+	<!--Topbar/Head Starts Here-->
+	<div id="header">
+		<h1><a href="#">Demo Bank</a></h1>
+		<!-- tab_menu starts here -->
+		<div class="tab_menu">
+			<ul>
+				<li class="active" id="home"><a href="#">Home</a>
+				<li><a href="#">Employee</a></li>
+				<li><a href="#">Service Request</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- secondfold  Starts here-->
+	<div class="secondfold">
+		<!-- bodywraper Starts here--> 
+		<div class="ticker"></div>
+		<div class="menu_wrap">
+		<div class="mani"></div>
+		<div class="menu_scroll">
+		<iframe src="menu.html" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" name="memuframe"  id="menuframe" class="resize"  width="100%"  ></iframe>
+		</div>
+  	</div>
+</div>
+		<div class="bodywraper">  
+		</div>
+		<!-- bodywrapper Ends here--> 
+	</div>
+	<!-- secondfold  Ends here-->
+</div>
+<!--Page Wrapper Ends here-->
+<!--footer Starts here-->
+<div class="footer">
+		<ul class="links">
+		<li><a href="#">Privacy Policy </a></li>
+		<li><a href="#">Disclaimer</a></li>
+		<li class="last"><a href="#">Terms &amp; Conditions</a></li>
+		</ul>
+</div> 
+<!--footer Ends here-->
+</body>
+</html>
+

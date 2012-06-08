@@ -1,0 +1,425 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0px;
+	color:#666;
+font-family:Arial, Helvetica, sans-serif;
+	font-size:76%;
+	padding:0px;
+	background:transaprent;
+}
+/* common Characteristics */
+*|*:-moz-any-link:focus {outline:none;}
+button::-moz-focus-inner { border:0px; }
+a:focus{outline:none;}
+button:focus{outline:none;}
+h3{
+	color:#3E0139;
+	font-size:2em;
+	font-weight:normal;
+	display:block;
+	clear:both;
+	border-bottom:solid 1px #c1c4c0;
+	margin:5px 0 0 0;
+	padding-bottom:5px;
+	position:relative;
+}
+h3 a {
+	height:14px;
+	margin:5px 5px 0px 0px;
+	padding:2px 15px 2px 2px;
+	background:url(../img/help.png) no-repeat right;
+	display:inline-block;
+	/*float:right;*/
+	color:#666666;
+	font-size:10px;
+	font-weight:bold;
+	position:absolute;
+	right:0px;
+	top:5px;
+	cursor:default;
+	text-decoration:none;
+}
+h3 a:hover{
+display:block;
+background-color:#f8f8f8;
+}
+input[type="text"], input[type="password"], textarea{
+	font-family:Verdana, Geneva, sans-serif;
+	border:solid 1px #ccc;
+	padding:4px;
+	background-color:#fff;
+	width:180px;
+	font-size:0.95em;
+	color:#333;
+}
+select{font-family:Verdana, Geneva, sans-serif;
+	border:solid 1px #ccc;
+	padding:4px;
+	background-color:#fff;
+	font-size:0.95em;
+	color:#333;}
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+	border:solid 1px #f396e7;
+}
+.elemhover{background:#DFFFD5 !important; border:solid 1px #3C0 !important;}
+
+.btn_wrap{
+text-align:right;
+font-weight:bold;
+display:block;
+clear:both;
+}
+button {
+height:24px;
+color:#fff;
+font-weight:bold;
+border:none;
+margin:5px 5px 5px 0px;
+padding:0px;
+background:none;
+cursor:default;
+
+}
+button p{
+background:url(../img/btn_lft.gif) no-repeat left;
+height:22px;
+padding:0 0px 0 10px;
+margin:0px;
+}
+button span{
+background:url(../img/btn_rht.gif) no-repeat right;
+height:22px;
+display:inline-block;
+padding:4px 10px 0 0px;
+margin-top:-2px;
+white-space:nowrap;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.back a{
+display:inline-block;
+background:url(../img/goback.png) no-repeat left center;
+padding:4px 4px 4px 20px;
+
+}
+.back a:hover{
+display:inline-block;
+background:url(../img/goback_hov.png) no-repeat left center;
+padding:4px 4px 4px 20px;
+}
+/*_____________________________________________*/
+.t_grid {
+	width:100%;
+	clear:both;
+	 border-collapse: collapse;
+}
+.t_grid thead{
+	background-color:#7e4d84;
+}
+.t_grid thead tr th, .t_grid tfoot tr th {
+	background-color:#7e4d84;
+	border:1px solid #fff;
+	border-bottom:solid 1px #54075b;
+	color:#fff;
+	font-weight:bold;
+	padding:6px 2px 6px 6px;
+	text-align:left;
+	
+}
+.t_grid thead tr .header {
+	background-image: url(../img/arrowbg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+.t_grid tbody td {
+
+	padding:6px 6px 6px 6px;
+	border:1px solid #fff;
+}
+.t_grid tbody tr.odd td {
+	background-color:#f1f3f5;
+}
+.t_grid tbody tr.higlit td{
+	background-color:#fff0c0;
+	/*color:#000000;*/
+}
+.t_grid tbody tr.selected td,.t_grid tbody tr.selected td a{
+	background-color:#009E83;
+	color:#FFFFFF;
+}
+.t_grid thead tr .headerSortUp {
+	background-image: url(../img/asc.gif);
+}
+.t_grid thead tr .headerSortDown {
+	background-image: url(../img/desc.gif);
+}
+.t_grid thead tr .headerSortDown, .t_grid thead tr .headerSortUp {
+	background-color: #54075b;
+	color:#FFFFFF;
+}
+
+.t_grid tbody td a{
+	color:#666666;
+	cursor:pointer;
+	position:relative;
+}
+.t_grid tbody td a:hover{
+	color:#d84900;
+}
+/* tabs styling */
+.ui-tabs {zoom: 1;  margin:0px; padding:0px; }
+.ui-tabs .ui-tabs-nav { list-style: none; position: relative; padding: .2em .4em 0;border:0px; border-bottom:1px solid #00ab95; display:block; height:2em; margin:0px;}
+.ui-tabs .ui-tabs-nav li { font-size:0.87em; font-weight:bold; color:#007362; position: relative; float: left; border-bottom-width: 0 !important; margin: 0 .2em -1px 0; padding: 0; background-color:#c4efea;/*d1dbe6*/}
+.ui-tabs .ui-tabs-nav li a {color:#007362;  float: left; text-decoration: none; padding: .5em .5em; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { padding-bottom: 0px; border-bottom-width: 0; background-color:#fff; border:1px solid #00ab95;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { padding: .50em 0.4em; display: block; border-width: 0; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+/* Datepicker
+----------------------------------*/
+.date{width:110px !important}
+.ui-helper-hidden-accessible{  display:none;}
+.ui-datepicker { width: 17em; padding: .2em .2em 0;background-color:#f3dcf0;  border:solid 1px #f396e7; font-size:.89em;}
+.ui-datepicker .ui-datepicker-header { position:relative; padding:.2em 0; background-color:#54075b;color:#fff; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 2px; height: 1.8em; cursor:pointer }
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { top: 1px; }
+.ui-datepicker .ui-datepicker-prev { left:15px; }
+.ui-datepicker .ui-datepicker-next { right:22px; }
+.ui-datepicker .ui-datepicker-prev-hover { text-decoration:underline; }
+.ui-datepicker .ui-datepicker-next-hover { text-decoration:underline; }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: block; position: absolute; left: 50%; margin-left: -8px; top: 50%; margin-top: -8px;  }
+.ui-datepicker .ui-datepicker-title { margin: 0 2.3em; line-height: 1.8em; text-align: center; }
+.ui-datepicker .ui-datepicker-title select { float:left; font-size:1em; margin:1px 0; }
+.ui-datepicker select.ui-datepicker-month-year {width: 100%;}
+.ui-datepicker select.ui-datepicker-month, 
+.ui-datepicker select.ui-datepicker-year { width: 49%;}
+.ui-datepicker .ui-datepicker-title select.ui-datepicker-year { float: right; }
+.ui-datepicker table {width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+.ui-datepicker th { padding: .7em .3em; text-align: center; font-weight: bold; border: 0; color:#333 }
+.ui-datepicker td { border: 0; padding: 1px; }
+.ui-datepicker td span, .ui-datepicker td a { display: block; padding: .2em; text-align: right; text-decoration: none;border:solid 1px #f396e7; background:#fff; color:#333;}
+.ui-datepicker .ui-datepicker-buttonpane { background-image: none; margin: .7em 0 0 0; padding:0 .2em; border-left: 0; border-right: 0; border-bottom: 0; }
+.ui-datepicker .ui-datepicker-buttonpane button { float: right; margin: .5em .2em .4em; cursor: pointer; padding: .2em .6em .3em .6em; width:auto; overflow:visible; }
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current { float:left; }
+.ui-datepicker .ui-state-hover{background-color:#5c3160; color:#fff;}
+.ui-datepicker .ui-state-active{background-color:#009e83;color:#fff;}
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi { width:auto; }
+.ui-datepicker-multi .ui-datepicker-group { float:left; }
+.ui-datepicker-multi .ui-datepicker-group table { width:95%; margin:0 auto .4em; }
+.ui-datepicker-multi-2 .ui-datepicker-group { width:50%; }
+.ui-datepicker-multi-3 .ui-datepicker-group { width:33.3%; }
+.ui-datepicker-multi-4 .ui-datepicker-group { width:25%; }
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header { border-left-width:0; }
+.ui-datepicker-multi .ui-datepicker-buttonpane { clear:left; }
+.ui-datepicker-row-break { clear:both; width:100%; }
+
+/* RTL support */
+.ui-datepicker-rtl { direction: rtl; }
+.ui-datepicker-rtl .ui-datepicker-prev { right: 2px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next { left: 2px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-prev:hover { right: 1px; left: auto; }
+.ui-datepicker-rtl .ui-datepicker-next:hover { left: 1px; right: auto; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane { clear:right; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button { float: left; }
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group { float:right; }
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header { border-right-width:0; border-left-width:1px; }
+
+/* IE6 IFRAME FIX (taken from datepicker 1.5.3 */
+.ui-datepicker-cover {
+    display: none; /*sorry for IE5*/
+    display/**/: block; /*sorry for IE5*/
+    position: absolute; /*must have*/
+    z-index: -1; /*must have*/
+    filter: mask(); /*must have*/
+    top: -4px; /*must have*/
+    left: -4px; /*must have*/
+    width: 200px; /*must have*/
+    height: 200px; /*must have*/
+}
+
+/* user input table*/
+
+.user_input{
+	color:#333;
+	font-size:1em;
+	font-weight:bold;
+}
+.user_input td, .user_max_input td{
+	padding:5px;
+}
+.user_input td:first-child{
+	width:40%;
+	text-align:right;
+	
+}
+.user_max_input{
+	color:#333;
+	font-size:1em;
+	font-weight:bold;
+}
+.dtd_output{
+	width:49.9%;
+	border:solid 2px #d2dfef;
+	float:left;
+	margin-bottom:20px;
+}
+.dtd_output th{
+	color:#4d80be;
+	text-align:left;
+	font-size:1.3em;
+	padding:10px 5px;
+	border-bottom:solid 1px #cbcbcb;
+}
+.dtd_output td{
+	border-bottom:solid 1px #e5e5e5;
+	padding:5px;
+}
+.dtd_output td:first-child{
+	width:30%;
+	
+}
+.dtd_output td a{
+	border:solid 1px #e5e5e5;
+	background-color:#89c65d;
+	color:#fff;
+	padding:3px 5px;
+	font-weight:bold;
+	cursor:pointer;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius:3px;
+}
+#tool_box{
+	display:inline-block;
+	background-color:#e5e8ec;
+	border:0px;
+	border:solid 1px #d0d2d5;
+	position:absolute;
+	top:1px;
+	right:1px;
+	float:right;
+	padding:6px 4px;
+	
+}
+#tool_box button{float:none; background:#e5e8ec; color:#666;margin:0px 5px; }
+#tool_box #pdf{
+	background:#d7d9dd url(../img/pdf.png) top left no-repeat;
+	color:#333;
+	height:26px;
+	padding-left:30px;
+	padding-right:5px;
+}
+#tool_box #pdf:hover{background-color:#666; color:#fff;}
+*:first-child+html #tool_box button {display:inline-block; width:120px;}/*fix for IE7*/
+h2{
+	color:#4e81be;
+	font-weight:normal;
+}
+.setupbox{
+	list-style:none;
+	display:inline-block;
+	padding-left:0px;
+	margin:0px 4px;
+	width:218px;
+	border:solid 1px #e5e8ec;
+	float:left;
+}
+.setupbox li.h_title{
+	background:#dcdcdb url(../img/h_indicator.png) left no-repeat;
+	font-weight:bold;
+	padding:5px 2px 6px 40px;
+	font-size:1.20em;
+	
+}
+.setupbox li.hd{
+	padding:6px 2px 8px 5px;
+	background-color:#f1f3f5;
+}
+.setupbox li.ld{
+	padding:6px 2px 8px 5px;
+	background-color:#fff;
+}
+.setupbox li input{
+	float:right;
+	margin:0px;
+	margin-right:4px;
+}
+fieldset{
+	border:solid 1px #f3c4ed;
+	background:#f3e7f1 url(../img/pix.gif) repeat;
+	display:block;
+	clear:both;
+	
+	}
+legend{
+	color:#3E0139;
+	font-size:1.2em;
+	font-weight:bold;
+	margin-top:-7px;
+	margin-left:10px;
+	background-color:#f3dcf0;
+	padding:0px 12px;
+	clear:both;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:5px;
+	
+	}
+.mandatory{
+	display:block;
+	text-align:right;
+}
+.mandi{
+	color:#FF0000;
+	font-weight:bold;
+	font-size:14px;
+	padding-right:2px;
+	}
+.note{
+	color:#333;
+	padding:1%;
+	width:97.5%;
+	margin-top:10px;
+	margin-bottom:5px;
+	background-color:#fefdbf;
+	border:solid 1px #ffb040;
+	display:inline-block;
+	clear:both;
+}
+/*************** types of download ****************/
+#downloads{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	float:right;
+	display:block;
+	margin-top:15px;
+	clear:both;
+	
+}
+#downloads li{
+	list-style:none;
+	margin:0px;
+	float:left;
+	height:25px;
+	padding-top:5px;
+	display:block;
+	font-weight:bold;
+	vertical-align:bottom;
+}
+#downloads li img{
+	padding:0px;
+	margin-top:-4px;
+	margin-left:4px;
+	margin-right:4px;
+}
+/*************** End types of download ****************/

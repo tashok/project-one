@@ -1,0 +1,278 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px auto;
+	background-color:#fff;
+	color:#666;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 76%;
+	padding:0px;
+}
+.pagewrap{
+	margin:0px auto;
+	width:98%;
+}
+#header{
+	margin:0px;
+	width:100%;
+	border-top:solid 5px #e5e8ec;
+}
+#header h1{display:inline-block; margin:0px; margin-top:8px;}
+*:first-child+html #header h1{display:inline; float:left;}
+#header h1 a{
+	background:transparent url(../img/logo.png) left top no-repeat;
+	float:left;
+	height:20px;
+	overflow:hidden;
+	padding:25px 0 0 0; /* height of logo image */
+	text-indent:-9000px;
+	width:300px;
+	}
+*:first-child+html #header{margin-bottom:1px;}
+ .ticker{display:block;  clear:both; background-color:#e5e8ec; padding:5px; color:#333; }
+ .secondfold{display:inline-block; width:100%; padding-bottom:35px; background-color:#e5e8ec;  }
+ .menu_wrap{
+	width:15%;
+	min-height:400px;
+	float:left;
+	margin-right:1px;
+	margin-left:5px;
+	position:relative;
+	z-index:0;
+	}
+.bodywraper{
+	display:inline-block;
+	padding:1%;
+	border:solid 1px #d0d2d5;
+	background-color:#FFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:5px;
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	position:relative;
+	width: 81.5%;
+	float:right;
+	
+ }
+.bodywraper h1{
+	font-weight:normal;
+	color:#3E0139;
+	margin:0px;
+	display:block;
+	border-bottom:solid 1px #bfbfbf;
+	font-size:2em;
+}
+.bodywraper h1 span{
+	color:#999;
+}
+.bodywraper h2{
+	color:#4e81be;
+	font-weight:normal;
+}
+.cont_wrap{
+	display:inline-block;
+	width:100%;
+	/*margin-top:15px;*/
+	z-index:1;
+	zoom:1;
+	
+}
+.footer{ 
+	display:block; 
+	clear:both; 
+	width:99.5%; 
+	margin:0px 0.25%;
+	position:fixed; 
+	bottom:0px; 
+	background-color:#7e4d84;
+	z-index:100; 
+	border-top:solid 1px #999;
+	border-left:solid 1px #999;
+	border-right:solid 1px #999;
+	-moz-border-radius-topleft:5px ;
+	-moz-border-radius-topright:5px ;
+	border-top-left-radius:5px ;
+	border-top-right-radius:5px ;
+	}
+.footer .links{float:left; margin:5px 2px; }
+.footer .links li { float:left; list-style:none;}
+.footer .links li a {
+	color:#FFF;
+	font-size:0.92em;
+	height:0.92em;
+	margin-right:7px;
+	padding-right:7px;
+	}
+foooter .links li.last a {
+	background:none;
+	padding-right:0;
+	}
+.footer .copyright {
+	color:#FFF;
+	float:right;
+	font-size:0.92em;
+	padding:5px 30px;
+	margin:0px;
+	}
+.tab_menu
+	{
+	width:100%;
+	display:inline-block;
+	clear:both;
+	margin:0px 0px 0px 0px;
+	}
+	.tab_menu ul
+	{
+	margin:10px 0px 0px 0px;
+	padding:0px;
+	display:inline-block;
+	margin-left:-1px;
+	}
+	.tab_menu ul li
+	{	
+	list-style:none;
+	float:left;
+			}
+	.tab_menu ul li a:link,.tab_menu ul li a:visited
+	{
+	 background:#5C3160;
+	 list-style:none;
+	 display:inline-block;
+	 padding:6px 10px 6px 10px;
+	 margin:0px 0px;
+	text-decoration:none;
+	font-size:1.10em;
+	color:#fff;
+	border-right:solid 1px #725177; 
+	border-bottom:0px;
+	font-weight:bold;
+	
+	}
+	.tab_menu ul li	a:hover
+	{
+		background:#fff;
+		border:1px #725177 solid;
+		border-bottom:0px; 
+		color:#3E0139;	
+		margin:-1px;
+		
+	}
+	.tab_menu ul li.active a
+	{
+		background:#E5E8EC;
+		border:solid 1px #d4d6d9;
+		border-bottom:0px; 
+		color:#333;	
+		
+	}
+	
+.menu_scroll{
+	background-color:#FFF; 
+	padding:2px;
+	border:solid 1px #d0d2d5;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:5px;
+	-moz-border-radius-topleft:0px ;
+	-webkit-border-top-left-radius: 0px;
+	border-top-left-radius:0px ;
+	-moz-border-radius-bottomleft:0px ;
+	-webkit-border-bottom-left-radius: 0px;
+	border-bottom-left-radius:0px ;
+	width: 100%;
+	float:left;
+	position:relative;
+	left:0px;
+	display:inline-block;
+	
+}
+.mani{
+	position:absolute;
+	left:-15px;
+	top:200px;
+	background:url(../img/mani.png) no-repeat;
+	width:18px;
+	height:125px;
+	z-index:4 ;
+}
+	/* LHS_menu
+---------------------------------------------*/
+
+.glossymenu{
+	width: 100%; /*width of menu*/
+	
+}
+.glossymenu a.menuitem{
+	background-color:#F3DCF0;
+	font-size:1em;
+	font-weight:bold;
+	color:#3E0139;
+	display: block;
+	position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+	width: auto;
+	padding: 6px 0;
+	padding-left: 10px;
+	text-decoration: none;
+	border-bottom:solid 1	px #fff;
+}
+*:first-child+html .glossymenu a.menuitem {zoom:1;}/* ie7*/
+.glossymenu a.menuitem:visited, .glossymenu .menuitem:active{
+color: #3E0139;
+}
+
+	.glossymenu a.menuitem .statusicon{ /*CSS for icon image that gets dynamically added to headers*/
+position: absolute;
+top: 5px;
+right: 5px;
+border: none;
+}
+
+.glossymenu a.menuitem:hover{
+background-color:#54075b !important;
+/*background-image:url(../img/glossyback.gif);*/
+color:#fff;
+}
+
+
+.highlt{
+background-color:#54075b !important;
+/*background-image:url(../img/glossyback.gif);*/
+color:#fff !important;
+}
+
+
+.glossymenu div.submenu{ /*DIV that contains each sub menu*/
+background: white;
+}
+
+.glossymenu div.submenu ul{ /*UL of each sub menu*/
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.glossymenu div.submenu ul li{
+border-bottom: 1px dotted #c1c4c0;
+}
+
+.glossymenu div.submenu ul li a{
+	display: block;
+	font-size:1em;
+	color: black;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-right: 0;
+	padding-bottom: 5px;
+	background-color:#fff;
+}
+
+.glossymenu div.submenu ul li a:hover,.glossymenu div.submenu ul li a:focus{
+background: #ffc91d;
+color: #333;
+}
