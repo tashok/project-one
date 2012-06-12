@@ -4,12 +4,16 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Demo</title> 
 	<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="../css/jqueryslidemenu.css" rel="stylesheet" type="text/css" media="screen" />
 	<script type="text/javascript" src="../script/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../script/iframe.js"></script>
+	<script type="text/javascript" src="../script/jqueryslidemenu.js"></script>
 	<script>
 	$(document).ready(function(){
-	$(".tab_menu ul li").click(function(){
+	$(".jqueryslidemenu ul li").click(function(){
 			$(this).addClass('active');
-			$(this).siblings("li").removeClass('active') }
+			$(this).siblings("li").removeClass('active')
+			$(this).siblings("li").("ul").("li").removeClass('active')}
 		);
 	});
 	</script>
@@ -20,27 +24,54 @@
 	<!--Topbar/Head Starts Here-->
 	<div id="header">
 		<h1><a href="#">Demo Bank</a></h1>
-		<!-- tab_menu starts here -->
-		<div class="tab_menu">
+			<!-- tab_menu starts here -->
+			<div id="myslidemenu" class="jqueryslidemenu">
 			<ul>
-				<li class="active" id="home"><a href="#">Home</a>
-				<li><a href="#">Employee</a></li>
-				<li><a href="#">Service Request</a></li>
+				<li><a href="#">Item 1</a></li>
+				<li><a href="#">Item 2</a></li>
+				<li><a href="#">Folder 1</a>
+					<ul>
+						<li><a href="#">Sub Item 1.1</a></li>
+						<li><a href="#">Sub Item 1.2</a></li>
+						<li><a href="#">Sub Item 1.3</a></li>
+						<li><a href="#">Sub Item 1.4</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Item 3</a></li>
+				<li><a href="#">Folder 2</a>
+					<ul>
+						<li><a href="#">Sub Item 2.1</a></li>
+						<li><a href="#">Folder 2.1</a>
+							<ul>
+								<li><a href="#">Sub Item 2.1.1</a></li>
+								<li><a href="#">Sub Item 2.1.2</a></li>
+								<li><a href="#">Folder 3.1.1</a>
+									<ul>
+										<li><a href="#">Sub Item 3.1.1.1</a></li>
+										<li><a href="#">Sub Item 3.1.1.2</a></li>
+										<li><a href="#">Sub Item 3.1.1.3</a></li>
+										<li><a href="#">Sub Item 3.1.1.4</a></li>
+										<li><a href="#">Sub Item 3.1.1.5</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Sub Item 2.1.4</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Item 4</a></li>
 			</ul>
+			<br style="clear: left" />
+			</div>
 		</div>
-	</div>
+	
 	<!-- secondfold  Starts here-->
 	<div class="secondfold">
 		<!-- bodywraper Starts here--> 
 		<div class="ticker"></div>
-		<div class="menu_wrap">
-		<div class="mani"></div>
-		<div class="menu_scroll">
-		<iframe src="menu.html" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" name="memuframe"  id="menuframe" class="resize"  width="100%"  ></iframe>
-		</div>
-  	</div>
-</div>
 		<div class="bodywraper">  
+			<iframe src="menu.html" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" name="middleframe"  id="middleframe"  
+			class="resize" width="100%"  ></iframe>
 		</div>
 		<!-- bodywrapper Ends here--> 
 	</div>
