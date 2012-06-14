@@ -1,13 +1,14 @@
 .jqueryslidemenu{
 background: #5C3160;
 width: 100%;
-z-index:100;
+z-index:1;
 }
 
 .jqueryslidemenu ul{
 margin: 0;
 padding: 0;
 list-style-type: none;
+z-index:2;
 }
 
 /*Top level list items*/

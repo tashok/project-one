@@ -16,11 +16,11 @@ body{
 	margin:0px;
 	width:100%;
 	border-top:solid 5px #e5e8ec;
-}
+	background:#fff url(../img/top_bg.png) no-repeat top right ;
+	}
 #header h1{display:inline-block; margin:0px; margin-top:8px;}
 *:first-child+html #header h1{display:inline; float:left;}
 #header h1 a{
-	background:transparent url(../img/logo.png) left top no-repeat;
 	float:left;
 	height:20px;
 	overflow:hidden;
@@ -31,23 +31,18 @@ body{
 *:first-child+html #header{margin-bottom:1px;}
  .ticker{display:block;  clear:both; background-color:#e5e8ec; padding:5px; color:#333; }
  .secondfold{display:inline-block; width:100%; padding-bottom:35px; background-color:#e5e8ec;  }
- .bodywraper{
+.bodywraper{
 	display:inline-block;
 	padding:1%;
 	border:solid 1px #d0d2d5;
 	background-color:#FFF;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
 	border-radius:5px;
-	-moz-border-radius-topright:0px;
-	-webkit-border-top-right-radius:0px;
-	border-top-right-radius:0px;
-	-moz-border-radius-bottomright:0px;
-	-webkit-border-bottom-right-radius:0px;
-	border-bottom-right-radius:0px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
 	position:relative;
+	left:5px;
 	width: 81.5%;
-	float:right;
+	float:left;
  }
 .bodywraper h1{
 	font-weight:normal;
@@ -121,3 +116,25 @@ foooter .links li.last a {
 	display:inline-block;
 	
 }
+/* Top menu & User Info starts here*/
+.tmenu{float:right; padding-right:10px; display:inline;}
+
+.top_menu{
+	display:block;
+	list-style:none;
+	padding-left:8px;
+	margin:0px;
+	height:14px;
+}
+.top_menu li{
+	float:left;
+	list-style:none;
+	margin:0px;
+	font-weight:bold;
+}
+.top_menu li a{
+	text-decoration:none;
+	color:#666;
+	padding:0px 10px;
+}
+.top_menu li a{padding-right:5px;color:#fff; display: inline-block; padding:0px 7px; background:#666;border:solid 1px #555;-moz-border-radius: 5px;-webkit-border-radius: 5px; -moz-box-shadow: -2px 0px 4px #999;box-shadow: -2px 0px 4px #999;	-webkit-box-shadow: -2px 0px 4px #999;}

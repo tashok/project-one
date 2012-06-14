@@ -8,30 +8,29 @@
 	<script type="text/javascript" src="../script/jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="../script/iframe.js"></script>
 	<script type="text/javascript" src="../script/jqueryslidemenu.js"></script>
-	<script>
-	$(document).ready(function(){
-	$(".jqueryslidemenu ul li").click(function(){
-			$(this).addClass('active');
-			$(this).siblings("li").removeClass('active')
-			$(this).siblings("li").("ul").("li").removeClass('active')}
-		);
-	});
-	</script>
 </head>
 <body>
 <!--page wraper Starts Here-->
 <div class="pagewrap">
+
 	<!--Topbar/Head Starts Here-->
 	<div id="header">
-		<h1><a href="#">Demo Bank</a></h1>
+		<h1><a href="#">Demo</a></h1>
+		<!--Topmenu and Login Info starts here -->
+			<div class="tmenu">
+				<ul class="top_menu">
+				<li><a href="#"><span>Settings</span></a></li>
+				<li><a href="#"><span>Help</span></a></li>
+				<li class="last"><a href="#"><span>Logout</span></a></li>
+				</ul>
+				<!--User login info Starts Here-->
+			</div>
 			<!-- tab_menu starts here -->
 			<div id="myslidemenu" class="jqueryslidemenu">
 			<ul>
-				<li><a href="#">Item 1</a></li>
-				<li><a href="#">Item 2</a></li>
-				<li><a href="#">Folder 1</a>
+				<li><a href="#">Employee</a>
 					<ul>
-						<li><a href="#">Sub Item 1.1</a></li>
+						<li><a href="#">Registration</a></li>
 						<li><a href="#">Sub Item 1.2</a></li>
 						<li><a href="#">Sub Item 1.3</a></li>
 						<li><a href="#">Sub Item 1.4</a></li>
@@ -70,8 +69,7 @@
 		<!-- bodywraper Starts here--> 
 		<div class="ticker"></div>
 		<div class="bodywraper">  
-			<iframe src="menu.html" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" name="middleframe"  id="middleframe"  
-			class="resize" width="100%"  ></iframe>
+			<iframe src="menu.html" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" name="middleframe"  id=		"middleframe"  class="resize" width="100%"  ></iframe>
 		</div>
 		<!-- bodywrapper Ends here--> 
 	</div>

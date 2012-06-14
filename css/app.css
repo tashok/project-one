@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0px;
+	color:#666;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:76%;
+	padding:0px;
+	background:transaprent;
+}
+/* common Characteristics */
+*|*:-moz-any-link:focus {outline:none;}
+button::-moz-focus-inner { border:0px; }
+a:focus{outline:none;}
+button:focus{outline:none;}
+h3{
+	color:#3E0139;
+	font-size:2em;
+	font-weight:normal;
+	display:block;
+	clear:both;
+	border-bottom:solid 1px #c1c4c0;
+	margin:5px 0 0 0;
+	padding-bottom:5px;
+	position:relative;
+}
+input[type="text"], input[type="password"], textarea{
+	font-family:Verdana, Geneva, sans-serif;
+	border:solid 1px #ccc;
+	padding:4px;
+	background-color:#fff;
+	width:180px;
+	font-size:0.95em;
+	color:#333;
+}
+select{font-family:Verdana, Geneva, sans-serif;
+	border:solid 1px #ccc;
+	padding:4px;
+	background-color:#fff;
+	font-size:0.95em;
+	color:#333;}
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+	border:solid 1px #f396e7;
+}
+/* user input table*/
+
+.user_input{
+	color:#333;
+	font-size:1em;
+	font-weight:bold;
+}
+.user_input td, .user_max_input td{
+	padding:3px;
+}
+.user_input td:first-child{
+	width:30%;
+	text-align:left;
+	
+}
+.user_max_input{
+	color:#333;
+	font-size:1em;
+	font-weight:bold;
+}
+fieldset{
+	border:solid 1px #f3c4ed;
+	background:#f3e7f1 url(../img/pix.gif) repeat;
+	display:block;
+	clear:both;
+	
+	}
+legend{
+	color:#3E0139;
+	font-size:1.2em;
+	font-weight:bold;
+	margin-top:-7px;
+	margin-left:10px;
+	background-color:#f3dcf0;
+	padding:0px 12px;
+	clear:both;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:5px;
+	
+	}
+.mandatory{
+	display:block;
+	text-align:right;
+}
+.mandi{
+	color:#FF0000;
+	font-weight:bold;
+	font-size:14px;
+	padding-right:2px;
+	}
+.note{
+	color:#333;
+	padding:1%;
+	width:97.5%;
+	margin-top:10px;
+	margin-bottom:5px;
+	background-color:#fefdbf;
+	border:solid 1px #ffb040;
+	display:inline-block;
+	clear:both;
+}
