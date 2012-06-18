@@ -54,7 +54,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:f
 	padding:3px;
 }
 .user_input td:first-child{
-	width:30%;
+	width:40%;
 	text-align:left;
 	
 }
@@ -87,6 +87,8 @@ legend{
 .mandatory{
 	display:block;
 	text-align:right;
+	padding-top:20px;
+	
 }
 .mandi{
 	color:#FF0000;
